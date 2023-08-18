@@ -1,0 +1,23 @@
+package di.xml01;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.GenericXmlApplicationContext;
+
+import basic.Hello;
+
+public class DriverMain {
+
+	public static void main(String[] args) {
+
+		ApplicationContext context 
+		= new GenericXmlApplicationContext("spring-xml01.xml");
+	
+	Hello h = (Hello)context.getBean("h1");
+	h.printHello();
+	
+	Hello hh = context.getBean("h2",Hello.class);
+	hh.printHello();
+
+
+	}
+}
