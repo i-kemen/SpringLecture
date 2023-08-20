@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+		https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+	<bean id="samsungTv" class="di.tv01.SamsungTv"></bean>
+	<bean id="lgTv" class="di.tv01.LgTv"></bean>
+	<bean id="abcSpeaker" class="di.tv01.ABCSpeaker"></bean>
+	<bean id="xyzSpeaker" class="di.tv01.XYZSpeaker"></bean>
+
+</beans>
